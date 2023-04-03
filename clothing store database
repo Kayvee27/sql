@@ -1,0 +1,29 @@
+/** Store
+Shirts (5)
+Pants (15)
+Shoes (27)
+Coats (7)
+Accessories (30)
+**/
+
+CREATE TABLE store (id INTEGER PRIMARY KEY, name TEXT, aisle INTEGER, size INTEGER, quantity INTEGER);
+
+INSERT INTO store VALUES(1, "Shirts", 1, 0, 5);
+INSERT INTO store VALUES(2, "Pants", 2, 1, 15);
+INSERT INTO store VALUES(3, "Shoes", 3, 4, 27);
+INSERT INTO store VALUES(4, "Coats", 4, 6, 7);
+INSERT INTO store VALUES(5, "Accessories", 5, 5, 30);
+SELECT * FROM store WHERE aisle < 5 ORDER BY aisle
+
+
+display database ordered by aisle 
+SELECT * FROM store
+ORDER BY aisle < 5
+
+display database ordered by size
+SELECT * FROM store
+ORDER BY size 
+
+display database ordered by quantity
+SELECT * FROM store
+ORDER BY quantity 
